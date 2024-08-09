@@ -19,21 +19,6 @@ body {
     line-height: 1.5;
 }
 
-// 示例样式
-.container {
-    width: px2vw(355);
-    margin: 0 auto;
-    padding: px2vw(10);
-}
-
-.title {
-    font-size: px2vw(24);
-    margin-bottom: px2vw(10);
-}
-
-.content {
-    font-size: 1rem; // 使用相对于 html 的 rem 单位
-}
 
 // 媒体查询，处理极端屏幕尺寸
 @media screen and (max-width: 320px) {
