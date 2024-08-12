@@ -20,7 +20,10 @@
                     <img :src="getImageUrl(item.image)" :alt="item.name">
                     </div>
                     <div class="text-container">
-                    <div class="name">{{ item.name }}</div>
+                    <div class="row-name">
+                        <div class="indexDot">{{ item.index }}</div>
+                        <div class="name">{{ item.name }}</div>
+                    </div>
                     <div class="desc">{{ item.desc }}</div>
                     </div>
                 </div>
@@ -55,6 +58,7 @@ export default {
                     image: 'invite_step1.png',
                     name: '邀请好友',
                     desc: '分享活动页给好友',
+                    index: 1
                 },
                 {
                     image: 'invite_arrow.png'
@@ -63,6 +67,7 @@ export default {
                     image: 'invite_step2.png',
                     name: '好友完成',
                     desc: '好友注册登录APP',
+                    index: 2
                 },
                 {
                     image: 'invite_arrow.png'
@@ -71,6 +76,7 @@ export default {
                     image: 'invite_step3.png',
                     name: '领取奖励',
                     desc: 'APP查看获得积分',
+                    index: 3
                 },
             ],
             inviteList:[
@@ -210,7 +216,7 @@ export default {
     margin-right: px2vw(16);
     height: auto;
     border-radius: px2vw(16);
-    background: linear-gradient(to bottom, #FFE0DC 3%, #FFFFFF 97%);
+    background: linear-gradient(to bottom, #FFE0DC 10%, #FFFFFF 70%);
 }
 
 .middle-wrapper h1 {
@@ -264,11 +270,28 @@ export default {
   margin: 0 px2vw(10);
 }
 
+.middle-steps .row-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: px2vw(8);
+}
+.middle-steps .row-name .indexDot {
+  font-size: px2vw(10);
+  font-weight: bold;
+  color: white;
+  width: px2vw(14);
+  height: px2vw(14);
+  border-radius: 50%;
+  background-color: #631814;
+  text-align: center;
+
+}
 .middle-steps .step .name {
   font-size: px2vw(12);
   font-weight: bold;
   color: #631814;
-  margin-top: px2vw(8);
+  margin-left: px2vw(4);
 }
 
 .middle-steps .step .desc {
@@ -283,7 +306,7 @@ export default {
     margin-bottom: px2vw(16);
     height: auto;
     border-radius: px2vw(16);
-    background: linear-gradient(to bottom, #FFE0DC 3%, #FFFFFF 97%);
+    background: linear-gradient(to bottom, #FFE0DC 10%, #FFFFFF 25%);
     
 }
 .bottom-wrapper h1 {
@@ -299,7 +322,6 @@ export default {
     align-items: flex-start;
     margin-left: px2vw(16);
     height: auto;
-
 }
 .bottom-wrapper .invite-item {
     display: flex;
