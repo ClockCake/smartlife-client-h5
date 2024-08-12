@@ -22,7 +22,7 @@ html, body {
   font-family: pingfang SC, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100%;
+  height: 100vh;
   text-align: center;
 }
 

@@ -98,8 +98,8 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@import "../assets/styles.scss";
+<style lang="scss" scoped>
+@import "./styles.scss";
 .container {
     display: flex;
     flex-direction: column;
@@ -138,7 +138,7 @@ export default {
     background-color: gold;
     margin-left: px2vw(20);
 }
-.content {
+.container .content {
     margin-left: px2vw(20);
     display: flex;
     flex-direction: column;

@@ -25,13 +25,15 @@ export default {
 
 
 <style lang="scss">
-@import "../assets/styles.scss";
+@import "./styles.scss";
 .content {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 100%;
+  margin-left: auto;
+
 }
 
 .content a {
