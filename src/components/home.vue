@@ -15,8 +15,8 @@ export default {
     name: 'HomePage',
     data() {
         return {
-        names:["会员等级","邀请用户"],
-        routes: ["/membership", "/invite"], // 定义路由路径数组
+        names:["会员等级","邀请用户","积分明细"],
+        routes: ["/membership", "/invite","/point/detail"], // 定义路由路径数组
 
         }
     }

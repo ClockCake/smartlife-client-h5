@@ -1,8 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import HomePage from './components/home.vue'; // 假设你有一个首页组件
-import MembershipPage from './components/membership.vue'; // 使用与组件定义一致的名字
-import InviteUser from './components/invite.vue'; // 使用与组件定义一致的名字
+import HomePage from './components/home.vue'; 
+import MembershipPage from './components/membership.vue'; 
+import InviteUser from './components/invite.vue'; 
+import PointDetail from './components/pointDetail.vue';
 Vue.use(Router);
 
 const routes = [
@@ -20,6 +21,11 @@ const routes = [
     path: '/invite',
     name: 'inviteUser',
     component: InviteUser
+  },
+  {
+    path: '/point/detail',
+    name: 'pointDetail',
+    component: PointDetail
   }
 ];
 
