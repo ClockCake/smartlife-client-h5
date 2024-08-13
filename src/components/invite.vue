@@ -10,6 +10,9 @@
                 <div class="unit">极家汇积分</div>
                 <button>立即邀请</button>
             </div>
+            <img class="left_goldcoin" src="../assets/invite_left_goldcoin.png" alt="">
+            <img class="right_goldcoin" src="../assets/invite_right_goldcoin.png" alt="">
+            <img class="figer" src="../assets/invite_ finger.png" alt="">
         </div>
         <div class="middle-wrapper">
             <h1>玩法攻略</h1>
@@ -210,6 +213,28 @@ export default {
     border-radius: px2vw(20);
 }
 
+.left_goldcoin {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    width: px2vw(40);
+    height: px2vw(70);
+}
+
+.right_goldcoin {
+    position: absolute;
+    top: 70%;
+    right: 0;
+    width: px2vw(40);
+    height: px2vw(40);
+}
+.figer {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    width: px2vw(60);
+    height: px2vw(60);
+}
 .middle-wrapper {
     margin-top: px2vw(16);
     margin-left: px2vw(16);
