@@ -9,6 +9,22 @@
         <img src="../assets/point_modal.png" alt="">
     </div>
     <div class="space"></div>
+    <div class="scroll">
+        <div class="section">
+            <h1>积分明细</h1>
+            <div class="options">
+                <button>本月</button>
+                <div>获得 300 使用 100</div>
+            </div>
+        </div>
+        <!-- <div class="list">
+            <div class="item" v-for="item in pointList" :key="item.time">
+                <div class="time">{{ item.time }}</div>
+                <div class="name">{{ item.name }}</div>
+                <div class="point">{{ item.point }}</div>
+            </div>
+        </div> -->
+    </div>
 </div>
 </template>
 
@@ -52,6 +68,7 @@ export default {
 @import "./styles.scss";
 .container {
     min-height: 100%;
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -105,6 +122,47 @@ export default {
     width: 100%;
     height: px2vw(8);
     background: #F8F8F8;
+}
+.scroll {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+}
+.scroll > .section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: px2vw(20);
+}
+.scroll > .section > h1 {
+    font-size: px2vw(16);
+    font-weight: bold;
+    color: #222222;
+}
+.scroll > .section > .options {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.scroll > .section > .options > button {
+    font-size: px2vw(14);
+    color: #222222;
+    background-color: white;
+    border: none;
+    outline: none;
+}
+.scroll > .section > .options > div {
+    font-size: px2vw(12);
+    color: #999999;
+    text-align: right;
+    // margin-right: pxw2vw(120);
 }
 
 </style>
